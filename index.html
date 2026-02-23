@@ -92,7 +92,7 @@
 }
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
   :root {
@@ -124,7 +124,7 @@
     box-shadow:0 2px 30px rgba(0,0,0,0.5);
   }
   .nav-logo {
-    font-family:'Bebas Neue',sans-serif; font-size:1.55rem; letter-spacing:2px;
+    font-family:'Oswald',sans-serif; font-size:1.55rem; letter-spacing:0.5px;
     color:var(--blue-light); text-decoration:none;
     display:flex; align-items:center; gap:8px;
   }
@@ -133,7 +133,7 @@
   .nav-links { display:flex; gap:34px; list-style:none; }
   .nav-links a {
     font-family:'Barlow Condensed',sans-serif;
-    font-size:0.88rem; letter-spacing:1.5px; text-transform:uppercase;
+    font-size:0.88rem; letter-spacing:0.5px; text-transform:capitalize;
     color:var(--light); text-decoration:none; opacity:0.7;
     transition:opacity 0.2s, color 0.2s;
   }
@@ -141,7 +141,7 @@
   .nav-cta {
     background:var(--orange); color:#fff;
     font-family:'Barlow Condensed',sans-serif;
-    font-weight:700; font-size:0.85rem; letter-spacing:1.5px; text-transform:uppercase;
+    font-weight:700; font-size:0.85rem; letter-spacing:0.5px; text-transform:capitalize;
     padding:10px 24px; text-decoration:none;
     clip-path:polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
     transition:background 0.2s, transform 0.15s;
@@ -168,7 +168,7 @@
   }
   .hero-wordmark {
     position:absolute; right:-20px; top:50%; transform:translateY(-50%);
-    font-family:'Bebas Neue',sans-serif; font-size:32vw; line-height:1;
+    font-family:'Oswald',sans-serif; font-size:32vw; line-height:1;
     color:rgba(58,159,216,0.04); pointer-events:none; user-select:none; letter-spacing:-2px;
   }
   .hero-content { position:relative; max-width:760px; }
@@ -178,7 +178,7 @@
     border:1px solid rgba(58,159,216,0.38);
     padding:7px 18px;
     font-family:'Barlow Condensed',sans-serif;
-    font-size:0.78rem; letter-spacing:2.5px; text-transform:uppercase; color:var(--blue-light);
+    font-size:0.78rem; letter-spacing:1px; text-transform:capitalize; color:var(--blue-light);
     margin-bottom:30px; animation:fadeUp 0.6s ease both;
   }
   .badge-dot {
@@ -189,7 +189,7 @@
   @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0.25;} }
 
   .hero h1 {
-    font-family:'Bebas Neue',sans-serif;
+    font-family:'Oswald',sans-serif;
     font-size:clamp(4rem, 8.5vw, 8.5rem);
     line-height:0.91; letter-spacing:2px; color:var(--light);
     animation:fadeUp 0.6s 0.1s ease both;
@@ -206,7 +206,7 @@
   .btn-primary {
     background:var(--orange); color:#fff;
     font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:1rem;
-    letter-spacing:2px; text-transform:uppercase; padding:16px 38px; text-decoration:none; display:inline-block;
+    letter-spacing:0.5px; text-transform:capitalize; padding:16px 38px; text-decoration:none; display:inline-block;
     clip-path:polygon(0 0, calc(100% - 12px) 0, 100% 12px, 100% 100%, 12px 100%, 0 calc(100% - 12px));
     transition:background 0.2s, transform 0.15s, box-shadow 0.2s;
   }
@@ -214,7 +214,7 @@
   .btn-outline {
     border:1px solid rgba(58,159,216,0.45); color:var(--blue-light);
     font-family:'Barlow Condensed',sans-serif; font-weight:600; font-size:1rem;
-    letter-spacing:2px; text-transform:uppercase; padding:16px 38px; text-decoration:none; display:inline-block;
+    letter-spacing:0.5px; text-transform:capitalize; padding:16px 38px; text-decoration:none; display:inline-block;
     transition:border-color 0.2s, background 0.2s, color 0.2s;
   }
   .btn-outline:hover { border-color:var(--blue-light); background:rgba(58,159,216,0.1); color:#fff; }
@@ -224,17 +224,17 @@
     border-top:1px solid rgba(58,159,216,0.15);
     animation:fadeUp 0.6s 0.4s ease both;
   }
-  .stat-num { font-family:'Bebas Neue',sans-serif; font-size:2.6rem; color:var(--orange); letter-spacing:1px; }
-  .stat-label { font-size:0.72rem; letter-spacing:1.8px; text-transform:uppercase; color:var(--gray); margin-top:3px; }
+  .stat-num { font-family:'Oswald',sans-serif; font-size:2.6rem; color:var(--orange); letter-spacing:1px; }
+  .stat-label { font-size:0.72rem; letter-spacing:0.8px; text-transform:capitalize; color:var(--gray); margin-top:3px; }
 
   /* SECTIONS */
   section { padding:100px 56px; }
   .section-tag {
-    font-family:'Barlow Condensed',sans-serif; font-size:0.78rem; letter-spacing:3px; text-transform:uppercase;
+    font-family:'Barlow Condensed',sans-serif; font-size:0.78rem; letter-spacing:1.5px; text-transform:capitalize;
     color:var(--orange); display:flex; align-items:center; gap:12px; margin-bottom:18px;
   }
   .section-tag::after { content:''; width:50px; height:1px; background:var(--orange); opacity:0.5; }
-  .section-title { font-family:'Bebas Neue',sans-serif; font-size:clamp(2.6rem, 4.5vw, 4.2rem); letter-spacing:1px; line-height:1; color:var(--light); }
+  .section-title { font-family:'Oswald',sans-serif; font-size:clamp(2.6rem, 4.5vw, 4.2rem); letter-spacing:0.5px; line-height:1.05; color:var(--light); }
   .section-title em { color:var(--blue-light); font-style:normal; }
 
   /* SERVICES */
@@ -258,13 +258,13 @@
   .service-icon { font-size:2.2rem; margin-bottom:20px; display:block; }
   .service-card h3 {
     font-family:'Barlow Condensed',sans-serif; font-size:1.25rem; font-weight:700;
-    letter-spacing:1px; text-transform:uppercase; color:var(--light); margin-bottom:12px;
+    letter-spacing:1px; text-transform:capitalize; color:var(--light); margin-bottom:12px;
   }
   .service-card p { font-size:0.88rem; color:var(--muted); line-height:1.75; }
   .service-badge {
     display:inline-block; margin-top:18px; padding:4px 11px;
     background:rgba(26,95,138,0.18); border:1px solid rgba(58,159,216,0.22);
-    font-size:0.68rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--blue-light);
+    font-size:0.68rem; letter-spacing:0.8px; text-transform:capitalize; color:var(--blue-light);
     font-family:'Barlow Condensed',sans-serif;
   }
 
@@ -288,7 +288,7 @@
   .cov-pill {
     flex-shrink:0; padding:5px 13px; margin-top:2px;
     font-family:'Barlow Condensed',sans-serif;
-    font-size:0.7rem; letter-spacing:1.5px; text-transform:uppercase; border:1px solid; white-space:nowrap;
+    font-size:0.7rem; letter-spacing:1.5px; text-transform:capitalize; border:1px solid; white-space:nowrap;
   }
   .cov-pill.local { color:var(--orange); border-color:rgba(232,98,26,0.4); background:rgba(232,98,26,0.08); }
   .cov-pill.national { color:var(--blue-light); border-color:rgba(58,159,216,0.4); background:rgba(58,159,216,0.08); }
@@ -304,16 +304,16 @@
   }
   .financing-banner::before {
     content:'$'; position:absolute; right:240px; top:50%; transform:translateY(-50%);
-    font-family:'Bebas Neue',sans-serif; font-size:18rem; color:rgba(255,255,255,0.025);
+    font-family:'Oswald',sans-serif; font-size:18rem; color:rgba(255,255,255,0.025);
     line-height:1; pointer-events:none;
   }
-  .financing-banner h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(2rem,3.5vw,3.2rem); color:#fff; letter-spacing:2px; margin-bottom:10px; }
+  .financing-banner h2 { font-family:'Oswald',sans-serif; font-size:clamp(2rem,3.5vw,3.2rem); color:#fff; letter-spacing:0.5px; margin-bottom:10px; }
   .financing-banner h2 span { color:var(--orange2); }
   .financing-banner p { color:rgba(255,255,255,0.7); font-size:0.97rem; max-width:450px; line-height:1.7; }
   .btn-white {
     background:#fff; color:var(--blue);
     font-family:'Barlow Condensed',sans-serif; font-weight:700; font-size:0.95rem;
-    letter-spacing:2px; text-transform:uppercase; padding:16px 36px; text-decoration:none; white-space:nowrap;
+    letter-spacing:0.5px; text-transform:capitalize; padding:16px 36px; text-decoration:none; white-space:nowrap;
     clip-path:polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
     transition:background 0.2s, color 0.2s;
   }
@@ -330,8 +330,8 @@
     transition:border-color 0.2s, transform 0.2s; position:relative; overflow:hidden;
   }
   .about-card:hover { border-color:rgba(58,159,216,0.35); transform:translateY(-3px); }
-  .about-card-num { font-family:'Bebas Neue',sans-serif; font-size:2.8rem; color:var(--orange); letter-spacing:1px; }
-  .about-card-label { font-size:0.72rem; letter-spacing:1.5px; text-transform:uppercase; color:var(--gray); margin-top:5px; }
+  .about-card-num { font-family:'Oswald',sans-serif; font-size:2.8rem; color:var(--orange); letter-spacing:1px; }
+  .about-card-label { font-size:0.72rem; letter-spacing:1.5px; text-transform:capitalize; color:var(--gray); margin-top:5px; }
 
   /* PORTFOLIO */
   #portfolio { background:var(--dark); }
@@ -347,9 +347,9 @@
   .port-bg { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:5.5rem; opacity:0.07; transition:opacity 0.35s, transform 0.4s; }
   .portfolio-item:hover .port-bg { opacity:0.13; transform:scale(1.08); }
   .port-overlay { position:absolute; inset:0; background:linear-gradient(to top, rgba(12,21,32,0.92) 0%, transparent 55%); }
-  .port-cat { font-family:'Barlow Condensed',sans-serif; font-size:0.72rem; letter-spacing:2.5px; text-transform:uppercase; color:var(--orange); margin-bottom:7px; position:relative; }
-  .port-title { font-family:'Barlow Condensed',sans-serif; font-size:1.2rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--light); position:relative; }
-  .port-tag { display:inline-block; margin-top:10px; padding:3px 10px; border:1px solid rgba(58,159,216,0.28); font-size:0.68rem; letter-spacing:1px; text-transform:uppercase; color:var(--blue-light); font-family:'Barlow Condensed',sans-serif; position:relative; }
+  .port-cat { font-family:'Barlow Condensed',sans-serif; font-size:0.72rem; letter-spacing:2.5px; text-transform:capitalize; color:var(--orange); margin-bottom:7px; position:relative; }
+  .port-title { font-family:'Barlow Condensed',sans-serif; font-size:1.2rem; font-weight:700; text-transform:capitalize; letter-spacing:1px; color:var(--light); position:relative; }
+  .port-tag { display:inline-block; margin-top:10px; padding:3px 10px; border:1px solid rgba(58,159,216,0.28); font-size:0.68rem; letter-spacing:1px; text-transform:capitalize; color:var(--blue-light); font-family:'Barlow Condensed',sans-serif; position:relative; }
 
   /* FAQ */
   #faq { background:var(--dark2); }
@@ -369,19 +369,19 @@
   /* CONTACT */
   #contact { background:var(--dark); }
   .contact-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:80px; margin-top:60px; }
-  .contact-info h3 { font-family:'Barlow Condensed',sans-serif; font-size:0.78rem; letter-spacing:2px; text-transform:uppercase; color:var(--blue-light); margin-bottom:22px; }
+  .contact-info h3 { font-family:'Barlow Condensed',sans-serif; font-size:0.78rem; letter-spacing:0.8px; text-transform:capitalize; color:var(--blue-light); margin-bottom:22px; }
   .contact-dept { padding:17px 0; border-bottom:1px solid rgba(255,255,255,0.06); }
   .contact-dept:first-of-type { border-top:1px solid rgba(255,255,255,0.06); }
-  .dept-name { font-family:'Barlow Condensed',sans-serif; font-size:0.7rem; letter-spacing:2px; text-transform:uppercase; color:var(--orange); margin-bottom:6px; }
+  .dept-name { font-family:'Barlow Condensed',sans-serif; font-size:0.7rem; letter-spacing:0.8px; text-transform:capitalize; color:var(--orange); margin-bottom:6px; }
   .dept-email { font-size:0.9rem; color:var(--light); text-decoration:none; transition:color 0.2s; }
   .dept-email:hover { color:var(--blue-light); }
   .phone-block { margin-top:36px; }
-  .phone-num { font-family:'Bebas Neue',sans-serif; font-size:2.2rem; color:var(--orange); letter-spacing:2px; margin-top:12px; }
+  .phone-num { font-family:'Oswald',sans-serif; font-size:2.2rem; color:var(--orange); letter-spacing:0.5px; margin-top:12px; }
   .phone-sub { color:var(--gray); font-size:0.82rem; margin-top:6px; }
   .contact-form { display:flex; flex-direction:column; gap:16px; }
   .form-row { display:flex; gap:16px; }
   .form-group { display:flex; flex-direction:column; gap:8px; flex:1; }
-  .form-group label { font-family:'Barlow Condensed',sans-serif; font-size:0.72rem; letter-spacing:2px; text-transform:uppercase; color:var(--gray); }
+  .form-group label { font-family:'Barlow Condensed',sans-serif; font-size:0.72rem; letter-spacing:0.8px; text-transform:capitalize; color:var(--gray); }
   .form-group input, .form-group select, .form-group textarea {
     background:var(--dark3); border:1px solid rgba(58,159,216,0.15); color:var(--light);
     padding:14px 16px; font-family:'Barlow',sans-serif; font-size:0.93rem;
@@ -398,12 +398,12 @@
   footer { background:var(--dark2); border-top:1px solid rgba(58,159,216,0.1); padding:70px 56px 36px; }
   .footer-top { display:flex; gap:60px; flex-wrap:wrap; padding-bottom:50px; border-bottom:1px solid rgba(255,255,255,0.06); }
   .footer-brand { flex:0 0 270px; }
-  .footer-logo { font-family:'Bebas Neue',sans-serif; font-size:1.7rem; color:var(--blue-light); letter-spacing:2px; display:flex; align-items:center; gap:8px; }
+  .footer-logo { font-family:'Oswald',sans-serif; font-size:1.7rem; color:var(--blue-light); letter-spacing:0.5px; display:flex; align-items:center; gap:8px; }
   .footer-logo span { color:var(--light); }
   .footer-logo-bolt { color:var(--orange); }
   .footer-tagline { color:var(--gray); font-size:0.87rem; margin-top:12px; line-height:1.65; }
-  .footer-cert { margin-top:18px; padding:8px 14px; background:rgba(26,95,138,0.12); border:1px solid rgba(58,159,216,0.2); font-size:0.7rem; letter-spacing:1px; text-transform:uppercase; color:var(--blue-light); display:inline-block; font-family:'Barlow Condensed',sans-serif; }
-  .footer-col h4 { font-family:'Barlow Condensed',sans-serif; font-size:0.78rem; letter-spacing:2px; text-transform:uppercase; color:var(--orange); margin-bottom:20px; }
+  .footer-cert { margin-top:18px; padding:8px 14px; background:rgba(26,95,138,0.12); border:1px solid rgba(58,159,216,0.2); font-size:0.7rem; letter-spacing:0.8px; text-transform:capitalize; color:var(--blue-light); display:inline-block; font-family:'Barlow Condensed',sans-serif; }
+  .footer-col h4 { font-family:'Barlow Condensed',sans-serif; font-size:0.78rem; letter-spacing:0.8px; text-transform:capitalize; color:var(--orange); margin-bottom:20px; }
   .footer-col ul { list-style:none; display:flex; flex-direction:column; gap:10px; }
   .footer-col ul li a { color:rgba(237,242,247,0.42); font-size:0.88rem; text-decoration:none; transition:color 0.2s; }
   .footer-col ul li a:hover { color:var(--light); }
@@ -447,7 +447,7 @@
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="#contact" class="nav-cta">Free Quote</a>
+    <a href="#contact" class="nav-cta">Free quote</a>
   </nav>
 </header>
 
@@ -693,23 +693,23 @@
       <address>
         <div class="contact-dept">
           <div class="dept-name">Residential</div>
-          <a class="dept-email" href="mailto:residential@creativewiringsolutions.com">residential@creativewiringsolutions.com</a>
+          <a class="dept-email" href="/cdn-cgi/l/email-protection#106275637974757e6479717c507362757164796675677962797e77637f7c6564797f7e633e737f7d"><span class="__cf_email__" data-cfemail="c4b6a1b7ada0a1aab0ada5a884a7b6a1a5b0adb2a1b3adb6adaaa3b7aba8b1b0adabaab7eaa7aba9">[email&#160;protected]</span></a>
         </div>
         <div class="contact-dept">
           <div class="dept-name">Commercial</div>
-          <a class="dept-email" href="mailto:commercial@creativewiringsolutions.com">commercial@creativewiringsolutions.com</a>
+          <a class="dept-email" href="/cdn-cgi/l/email-protection#40232f2d2d25322329212c002332252134293625372932292e27332f2c3534292f2e336e232f2d"><span class="__cf_email__" data-cfemail="14777b79797166777d75785477667175607d6271637d667d7a73677b7861607d7b7a673a777b79">[email&#160;protected]</span></a>
         </div>
         <div class="contact-dept">
           <div class="dept-name">Industrial</div>
-          <a class="dept-email" href="mailto:industrial@creativewiringsolutions.com">industrial@creativewiringsolutions.com</a>
+          <a class="dept-email" href="/cdn-cgi/l/email-protection#92fbfcf6e7e1e6e0fbf3fed2f1e0f7f3e6fbe4f7e5fbe0fbfcf5e1fdfee7e6fbfdfce1bcf1fdff"><span class="__cf_email__" data-cfemail="7811161c0d0b0c0a111914381b0a1d190c110e1d0f110a11161f0b17140d0c1117160b561b1715">[email&#160;protected]</span></a>
         </div>
         <div class="contact-dept">
           <div class="dept-name">Marine</div>
-          <a class="dept-email" href="mailto:marine@creativewiringsolutions.com">marine@creativewiringsolutions.com</a>
+          <a class="dept-email" href="/cdn-cgi/l/email-protection#a7cac6d5cec9c2e7c4d5c2c6d3ced1c2d0ced5cec9c0d4c8cbd2d3cec8c9d489c4c8ca"><span class="__cf_email__" data-cfemail="e885899a81868da88b9a8d899c819e8d9f819a81868f9b87849d9c8187869bc68b8785">[email&#160;protected]</span></a>
         </div>
         <div class="contact-dept">
           <div class="dept-name">General &amp; Financing</div>
-          <a class="dept-email" href="mailto:info@creativewiringsolutions.com">info@creativewiringsolutions.com</a>
+          <a class="dept-email" href="/cdn-cgi/l/email-protection#dcb5b2bab39cbfaeb9bda8b5aab9abb5aeb5b2bbafb3b0a9a8b5b3b2aff2bfb3b1"><span class="__cf_email__" data-cfemail="11787f777e517263747065786774667863787f76627e7d6465787e7f623f727e7c">[email&#160;protected]</span></a>
         </div>
       </address>
       <div class="phone-block">
@@ -819,7 +819,7 @@
     <div class="footer-col">
       <h4>Contact</h4>
       <ul>
-        <li><a href="mailto:info@creativewiringsolutions.com">info@creativewiringsolutions.com</a></li>
+        <li><a href="/cdn-cgi/l/email-protection#bed7d0d8d1feddccdbdfcad7c8dbc9d7ccd7d0d9cdd1d2cbcad7d1d0cd90ddd1d3"><span class="__cf_email__" data-cfemail="3c55525a537c5f4e595d48554a594b554e55525b4f535049485553524f125f5351">[email&#160;protected]</span></a></li>
         <li><a href="tel:+1XXXXXXXXXX">(XXX) XXX-XXXX</a></li>
         <li><a href="#coverage">Vienna Area (100mi Radius)</a></li>
         <li><a href="#coverage">Nationwide Projects</a></li>
@@ -837,40 +837,4 @@
   </div>
 </footer>
 
-<script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('button[type="submit"]');
-    const orig = btn.innerHTML;
-    btn.innerHTML = '✓ Request Sent — We\'ll be in touch!';
-    btn.style.background = 'var(--blue-mid)';
-    btn.disabled = true;
-    setTimeout(() => {
-      btn.innerHTML = orig;
-      btn.style.background = '';
-      btn.disabled = false;
-      e.target.reset();
-    }, 5000);
-  }
-
-  // Scroll reveal
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.08 });
-
-  document.querySelectorAll('.service-card, .portfolio-item, .faq-item, .about-card, .cov-row').forEach((el, i) => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(22px)';
-    el.style.transition = `opacity 0.5s ${i * 0.05}s ease, transform 0.5s ${i * 0.05}s ease`;
-    observer.observe(el);
-  });
-</script>
-
-</body>
-</html>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><sc
